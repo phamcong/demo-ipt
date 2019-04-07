@@ -1,0 +1,20 @@
+<!-- <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Actions <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href='#'>Edit</a></li>
+    <li><a href='#'>Delete</a></li>
+    <li role=" separator" class="divider"></li>
+    <li><a href='#'>Print</a></li>
+  </ul>
+</div> -->
+
+
+<div ngbDropdown class="d-inline-block">
+  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle (ngModel)="params.value">{{ params.value }}</button>
+  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+    <button class="dropdown-item" *ngFor="let item of dropdownItems" (click)="changeSelectedItem(item)">{{ item.name }}</button>
+  </div>
+</div>

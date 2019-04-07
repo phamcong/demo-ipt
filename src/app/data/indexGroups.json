@@ -1,0 +1,38 @@
+[
+    {
+      "provider": "Amundi Service",
+      "index": { "label": "Index 1", "name": "Index Name 1" }
+    },
+    {
+      "provider": "Amundi Service",
+      "index": { "label": "Index 2", "name": "Index Name 2" }
+    },
+    {
+      "provider": "Amundi Service",
+      "index": { "label": "Index 3", "name": "Index Name 3" }
+    },
+    {
+      "provider": "Amundi IT",
+      "index": { "label": "Index 4", "name": "Index Name 4" }
+    },
+    {
+      "provider": "Amundi IT",
+      "index": { "label": "Index 5", "name": "Index Name 5" }
+    },
+    {
+      "provider": "Amundi IT",
+      "index": { "label": "Index 6", "name": "Index Name 6" }
+    },
+    {
+      "provider": "MSI Service",
+      "index": { "label": "Index 7", "name": "Index Name 7" }
+    },
+    {
+      "provider": "MSI Service",
+      "index": { "label": "Index 8", "name": "Index Name 8" }
+    },
+    {
+      "provider": "MSI Service",
+      "index": { "label": "Index 9", "name": "Index Name 9" }
+    }
+  ]

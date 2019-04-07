@@ -1,0 +1,24 @@
+<div>
+  <div class="dropdown">
+    <button (click)="toggleIndexDropdown()" class="dropbtn">
+      <label *ngIf="selectedIndex">{{ selectedIndex.label }}</label>
+      <label *ngIf="!selectedIndex.label">Index Dropdown</label>
+    </button>
+    <div id="indexDropdown" class="dropdown-content" *ngIf="isOpenIndexDropdown">
+      <div *ngFor="let indexGroup of indexGroups">
+        <table (click)="toggleIndexGroup(indexGroup)" [ngClass]="indexGroup.isOpen ? 'selected-item' : ''">
+          <tr>
+            <td (click)="indexGroup.isOpen = !indexGroup.isOpen">
+              <label *ngIf="!indexGroup.isOpen">+</label>
+              <label *ngIf="indexGroup.isOpen">-</label>
+            </td>
+            <td>{{ indexGroup.provider }}</td>
+          </tr>
+        </table>
+        <div *ngIf="indexGroup.isOpen">
+          <div *ngFor="let index of indexGroup.children" [ngClass]="index.isSelected ? 'selected-item' : ''">{{ index.label }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

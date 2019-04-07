@@ -1,0 +1,13 @@
+<div>
+  <div class="dropdown">
+    <button (click)="togglePtfDropdown()" class="dropbtn">
+      <label *ngIf="selectedPortfolio.heading">{{ selectedPortfolio.heading }}</label>
+      <label *ngIf="!selectedPortfolio.heading">Ptf Dropdown</label>
+    </button>
+    <div id="myDropdown" class="dropdown-content" *ngIf="isOpenPtfDropdown">
+      <div *ngFor="let portfolio of portfolios" (click)="onClickPtf(portfolio)" [ngClass]="portfolio.isSelected ? 'selected-item' : ''">
+        {{ portfolio.heading }}
+      </div>
+    </div>
+  </div>
+</div>
